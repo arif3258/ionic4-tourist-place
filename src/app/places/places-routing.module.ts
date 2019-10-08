@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PlacesPage } from './places.page';
 
@@ -15,7 +15,7 @@ const routes: Routes = [
                     },
                     {
                         path: ':placeId',
-                        loadChildren: './discover/place-detail.module#PlaceDetailPageModule'
+                        loadChildren: './discover/place-detail/place-detail.module#PlaceDetailPageModule'
                     }
                 ]
             },
@@ -36,7 +36,7 @@ const routes: Routes = [
                     },
                     {
                         path: ':placeId',
-                        loadChildren: './offers/offer-bookings/offer-bookings.module#OfferBookinsPageModule'
+                        loadChildren: './offers/offer-bookings/offer-bookings.module#OfferBookingsPageModule'
                     }
                 ]
             },
